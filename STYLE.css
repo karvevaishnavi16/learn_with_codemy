@@ -6,6 +6,50 @@ nav{
     padding: 20px;
     
 }
+.container {  
+    width: 100%; /* Takes full width of the screen */  
+}  
+
+.item {  
+    width: 100%; /* Full width for mobile */  
+    padding: 10px;  
+}  
+/* General styles */  
+body {  
+    font-family: Arial, sans-serif;  
+    font-size: 16px; /* Default font size for desktops */  
+}  
+
+/* Mobile styles */  
+@media screen and (max-width: 600px) {  
+    body {  
+        font-size: 14px; /* Slightly smaller font size for mobile */  
+    }  
+    
+    .container {  
+        flex-direction: column; /* Stacks items vertically */  
+    }  
+}  
+@media screen and (max-width: 600px) {  
+    h1 {  
+        font-size: 1.5em; /* Smaller font for mobile */  
+        line-height: 1.2; /* Adjust line height */  
+    }  
+
+    p {  
+        font-size: 0.9em; /* Adjust paragraph font size */  
+    }  
+}  
+.container {  
+    display: flex;  
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */  
+    justify-content: space-between; /* Spacing between items */  
+}  
+
+.item {  
+    flex: 1 1 300px; /* Flex properties for resizing */  
+    margin: 10px; /* Spacing around items */  
+}  
 .bar{
     display: flex  ;
     justify-content: space-between;
